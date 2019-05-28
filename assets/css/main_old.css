@@ -1,0 +1,66 @@
+h1, h2, h3, h4, h5, h6 {
+		font-family: "Roboto Slab", serif;
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+}
+
+/* Traitement du header */
+
+#header{
+    height: 120px;
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-between;
+    /* background-image: url(../../image/header_min.jpg); */
+    border-bottom: 5px solid crimson;
+}
+
+#header h4{
+    margin: 0px 0px 0px 7px;
+    align-self: flex-end;
+}
+
+#header ul{
+    margin: 0px 6px 3px 0px;
+    list-style-type:none;
+    display: inline-flex;
+    align-self: flex-end;
+}
+
+#header li{
+    margin: 0px 2px;
+}
+
+/* Traitement de banner */
+
+#banner {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+
+
+#banner span{
+    max-height: 100%;
+    max-width: 100%;
+    width: 50%;
+}
+
+#banner span img{
+    width: 100%;
+    height: auto;
+}
+
+#banner .content {
+    width: 50%;
+    height: inherit;
+}
+
+#banner h1{
+    font-size: 4vw;
+}
+
+#banner p{
+    font-size: 1.2vw;
+}

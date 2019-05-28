@@ -1,0 +1,234 @@
+/* Commun */
+
+h1, h2, h3, h4, h5, h6 {
+		font-family: "Roboto Slab", serif;
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0 0 0 0;
+}
+
+a{
+    color: darkred;
+}
+
+#wrapper{
+    padding: 0% 1.5%;
+}
+
+/* Traitement du header ------------------------------------------- */
+
+#header{
+    height: 10%;
+    min-height: 35px;
+    width: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 2.3%;
+    left: 2.3%;
+
+    /* background-image: url(../../image/header_min.jpg); */
+    border-bottom: 5px solid crimson;
+    background-color: white;
+}
+
+#toggle_button{
+    color: darkred;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    height: 20px;
+    position: relative;
+    bottom: 0.3em;
+    left: 5px;
+}
+
+#toggle_button:hover{
+    cursor: pointer;
+}    
+
+#header h4{
+    align-self: flex-end;
+    flex-grow: 1;
+    margin-left: 1em;
+}
+
+.icons{
+    display: flex;
+    align-self: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    
+    
+}
+
+#header li{
+    margin: 2px 2px;
+    color: darkred;
+}
+
+/* Traitement de Banner ------------------------------------------------ */
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 115px;
+}
+
+#sub_banner h1{
+    margin-bottom: 0.3em;
+}
+
+#banner .content, #banner .image{
+    width: 50%;
+}
+
+#banner .image img{
+    display: block;
+    max-width: 1;
+    max-height: 1;
+    width: auto;
+    height: 100%;
+    margin: 0px 0px 0px 20px;
+}
+
+/* Traitement de Sub_banner ------------------------------------------------ */
+
+#sub_banner header{
+    width: 100%;
+}
+
+#sub_banner ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sub_banner li{
+    text-align: center;
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+#projet, #sub_banner{
+    padding-top: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+    
+#sub_banner article{
+    width: 25%;
+}
+
+/* Traitement des projets ----------------------------------------- */
+
+#projet article{
+    width: 33%;
+    padding: 2em;
+}
+
+article img{
+    max-width: 40%;
+    max-height: auto;
+    float: left;
+    margin: 0.5% 1% 0% 0%;
+}
+
+article span{
+    width: 25%;
+    text-align: center;
+    font-size: 100%;
+}
+
+#projet article{
+    flex-wrap: wrap;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+    height: 100%;
+    width: 20%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+}
+
+/* Gestion de la postion de la sidebar -------------------------------  */
+
+.active{
+    left: 0;
+}
+
+.inactive{
+    left: -20%;
+}
+
+.sidebar_active {
+    width: 80%;
+    margin-left: 20%;
+}
+
+#menu input{
+    width: 100%;
+}
+
+#menu h3{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+#menu p{
+    padding: 1em 0em 0em 0em;
+    border-bottom: 2px black;
+}
+
+/* Si la taille de l'écran fait moins de 800px */
+
+@media only screen and (max-width: 1500px) {
+    #banner{
+        display: inline;
+        padding-top: 115px;
+    }
+    
+    #banner .content, #banner .image{
+    width: 100%;
+    }
+
+    #sub_banner article{
+    width: 50%;
+}
+    
+    #projet article{
+    width: 50%;
+    padding: 1em;
+    }}
+
+@media only screen and (max-width: 800px) {
+ 
+    #sub_banner li{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;        
+    }
+    
+    #projet article{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    }
+
+    #sub_banner article{
+    width: 100%;
+    padding-top: 115px;
+}
+    
+    article span{
+        width: 100%;
+        text-align: center;
+        font-size: 100%;
+    
+    }}
