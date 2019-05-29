@@ -5,10 +5,12 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 0 0;
+        
 }
 
 a{
     color: darkred;
+    text-transform: uppercase;
 }
 
 #wrapper{
@@ -29,9 +31,9 @@ a{
     position: fixed;
     right: 2.2%;
     left: 22.2%;
-    border-bottom: 4px solid crimson;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-bottom: 4px solid darkred;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
     background-color: white;
 }
 
@@ -51,6 +53,7 @@ a{
 }    
 
 #header h4{
+    text-transform: uppercase;
     align-self: flex-end;
     flex-grow: 1;
     margin-left: 1em;
@@ -61,7 +64,7 @@ a{
     align-self: flex-end;
     list-style-type: none;
     margin: 0;
-    right: 0;
+    padding-left: 0;
 }
 
 #header li{
@@ -101,19 +104,6 @@ a{
     width: 100%;
 }
 
-#sub_banner ul{
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#sub_banner li{
-    text-align: center;
-    width: 25%;
-    margin-bottom: 20px;
-}
-
 #projet, #sub_banner{
     padding-top: 20px;
     display: inline-flex;
@@ -122,6 +112,7 @@ a{
     
 #sub_banner article{
     width: 25%;
+    padding: 1em;
 }
 
 /* Traitement des projets ----------------------------------------- */
@@ -173,12 +164,12 @@ article span{
 }
 
 #menu h3{
-    padding: 1em 0em;
+    padding: 1em 0em 4em 0em;
 }
 
 #menu p{
     padding: 1vw 1vw 1vw 0vw;
-    border-bottom: 1px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
     font-size: 1.2em;
 }
 
